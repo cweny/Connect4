@@ -71,9 +71,11 @@ $(document).ready(function() {
                 $('#board').hide();
                 if (winner === 1) {
                     $('#player').text("Player Red Won");
+                    $('#player').css("color","red");
                     return;
                 } else if (winner === 2) {
                     $('#player').text("Player Blue Won");
+                    $('#player').css("color","blue");
                     return;
                 }
             }
@@ -81,10 +83,13 @@ $(document).ready(function() {
             winner = checkWin();
             if (winner !== 0) {
                 $('#board').hide();
-                if (winner === 1)
+                if (winner === 1) {
                     $('#player').text("Player Red Won");
-                else if (winner === 2)
+                    $('#player').css("color","red");
+                } else if (winner === 2) {
                     $('#player').text("Player Blue Won");
+                    $('#player').css("color","blue");
+                }
             }
         }
     });
