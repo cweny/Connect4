@@ -25,6 +25,7 @@ $(document).ready(function() {
     $("#restart").click(function() {
         board = newBoard();
         $('.slot').css("background-color", "white");
+        $('#player').css("color","black");
         redTurn = true;
         var rows = $(".row");
         for (var i = 0; i < rows.length; i++) {
