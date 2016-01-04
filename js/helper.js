@@ -88,7 +88,7 @@ var checkWin = function() {
                 return player;
             if ((row + 3 < board.length && col + 3 < board[0].length) && board[row + 1][col + 1] === player && board[row + 2][col + 2] === player && board[row + 3][col + 3] === player)
                 return player;
-            if ((row - 3 > 0 && col + 3 < board[0].length) && board[row - 1][col + 1] === player && board[row - 2][col + 2] === player && board[row - 3][col + 3] === player)
+            if ((row - 3 >= 0 && col + 3 < board[0].length) && board[row - 1][col + 1] === player && board[row - 2][col + 2] === player && board[row - 3][col + 3] === player)
                 return player;
         }
     }
